@@ -17,13 +17,13 @@ namespace Telegram.Bot.Types
         /// Unique message identifier
         /// </summary>
         [JsonProperty("message_id", Required = Required.Always)]
-        public int MessageId { get; internal set; }
+        public int MessageId { get; set; }
 
         /// <summary>
         /// Sender
         /// </summary>
         [JsonProperty("from", Required = Required.Default)]
-        public User From { get; internal set; }
+        public User From { get; set; }
 
         /// <summary>
         /// Date the message was sent
@@ -74,7 +74,7 @@ namespace Telegram.Bot.Types
         /// Optional. For text messages, the actual UTF-8 text of the message
         /// </summary>
         [JsonProperty("text", Required = Required.Default)]
-        public string Text { get; internal set; }
+        public string Text { get; set; }
 
         /// <summary>
         /// Optional. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text
